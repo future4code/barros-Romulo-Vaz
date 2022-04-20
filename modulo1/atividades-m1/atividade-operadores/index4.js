@@ -72,9 +72,10 @@ let idadeMeses = suaIdade * 12
 let idadeDias = suaIdade * 365
 let idadeHoras = suaIdade * 8760
 
+trings-
 console.log('Quantos meses de vida eu tenho:' , idadeMeses)
 console.log('Quantos dias de vida eu tenho:' , idadeDias)
-console.log('Quantas horas de vida eu tenho:' , idadeHoras)
+console.log('Quantas horas de vida eu tenho:' , deHoras)st
 
 
 //EXERCICÍO 4:
@@ -85,6 +86,7 @@ let numberTwo = Number(prompt('Diga outro número:'))
 let resultado
 // 1- O primeiro numero é maior que segundo? true
 resultado = numberOne > numberTwo
+
 console.log('O primeiro numero é maior que segundo?' , resultado)
 
 // 2- O primeiro numero é igual ao segundo? false
@@ -97,7 +99,6 @@ console.log('O primeiro numero é divisível pelo segundo?' , resultado)
 
 // 4- O segundo numero é divisível pelo primeiro? true
 resultado = !!(numberTwo / numberOne)
-console.log('O segundo numero é divisível pelo primeiro?' , resultado)
-
+console.log('O segundo numero é divisível pelo primei , resultado) 
 
 //obs: O true ou false vai depender dos números inseridos e do resultado das operações.
