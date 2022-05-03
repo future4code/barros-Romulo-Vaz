@@ -37,3 +37,55 @@ true
 */
 //---------------- EXERCÍCIOS DE ESCRITA DE CÓDIGO ----------------
 
+// EXERCÍCIO 1
+//A)
+/*
+function minhasInfos() {
+console.log(`Eu sou Rômulo, tenho 21 anos, moro em Paragominas e sou Desenvolvedor.`)
+}
+	
+minhasInfos()
+*/
+// B)
+/*
+function minhasInfos(nome,idade, cidade, profissao){
+	console.log(`Eu sou ${nome}, tenho ${idade} anos, 
+	moro em ${cidade} e sou ${profissao}.`)
+}
+
+minhasInfos("Rômulo", 21, "Paragominas", "Desenvolvedor")
+*/
+
+// EXERCÍCIO 2
+// A)
+/*
+function soma(num1, num2){
+	return num1 + num2
+}
+console.log(soma(5,3))
+/*
+
+// B)
+
+function boo(fist, second){
+	return fist >= second 
+}
+console.log(boo(5,3))
+//console.log(boo(3,5))
+*/
+
+// C)
+/*
+function imPar(number){
+	return number %2 == 0
+}
+console.log(imPar(8))
+*/
+
+// D)
+
+// EXERCÍCIO 3
+
+const num1 = prompt('Insira um número:')
+const num2 = prompt('Insira outro número: ')
+

@@ -1,0 +1,5 @@
+# Aprendizado da Semana
+Como foi exemplificado na Dica, nessa semana de Onboarding eu aprendi os comandos do terminal, 
+aprendi a mexer no **VS Code** e me dei muito bem com o git, 
+diferentemente dos comandos do terminal pois alguns deles eu tive que descobrir na força do desespero, 
+logo na primeira atividade. Mas com a ajuda dos colegas e a pratica eu consegui.
