@@ -81,7 +81,7 @@ imprimir a mensagem.
 //---------Exercícios de Escrita de Código ----------
 
 //-------- EXERCÍCIO 1 --------
-
+/*
 let idade = Number(prompt("Digite sua idade: "))
 
 if( idade >= 18){
@@ -94,7 +94,7 @@ if( idade >= 18){
 */
 
 //-------- EXERCÍCIO 2 --------
-
+/*
 let turno = prompt(`Qual turno você estuda?
 Digite M(Matutino), V(Vespertino) ou N(Noturno)`)
 
@@ -147,7 +147,7 @@ DOUTOR ESTRANHO NO MULTIVERSO DA LOUCURA
 dia 05/05.`)*/
 
 // DESAFIO 1:
-
+/*
 let filme = prompt("Qual gênero de filme vamos assistir? ")
 let ingresso = Number(prompt("Qual preço do ingresso?"))
 let lanche =  prompt("Vamos comprar um lanchinho!")
@@ -160,3 +160,4 @@ if( filme === "fantasia" && ingresso < 15 ){
 } else if( filme !== "fantasia" && ingresso > 15 ){
   console.log("Escolha outro filme :( ")
 }
+*/
