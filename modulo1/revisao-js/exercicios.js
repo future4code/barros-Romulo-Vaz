@@ -140,7 +140,7 @@ const requisitos = [
  }) 
  console.log(requisitos1)
 
-// EXERCÍCIO 13B
+//EXERCÍCIO 13B
 function retornaPessoasNaoAutorizadas(pessoas) {
   return pessoas
 }
@@ -163,7 +163,15 @@ console.log(requisitos2)
 
 // EXERCÍCIO 14
 function retornaContasComSaldoAtualizado(contas) {
-
+ let somarDivida = 0
+ let saldoAtual
+ for(let index = 0; index < contas.compras.length; index++){
+   somarDivida +=contas.compras[index]
+ }
+ for(let index = 0; index < contas.saldoAtual.length; index++){
+   saldoAtual - somarDivida - contas.saldoAtual[index]
+ }
+ return saldoAtual
 }
 
 // EXERCÍCIO 15A
