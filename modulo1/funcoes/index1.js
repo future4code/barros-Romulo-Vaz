@@ -85,7 +85,36 @@ console.log(imPar(8))
 // D)
 
 // EXERCÍCIO 3
+/*
+let num1 = Number(prompt('Digite um numero:'))
+let num2 = Number(prompt('Digite outro numero:'))
+console.log(`Números inseridos: ${num1} e ${num2} `)
 
-const num1 = prompt('Insira um número:')
-const num2 = prompt('Insira outro número: ')
+const somar = () => {
+    const resultado = num1 + num2
+    return resultado
+}
+const resp1 = somar(num1, num2)
+console.log(`Soma: ${resp1}`)
 
+const subtração = () => {
+    const resultado = num1 - num2
+    return resultado
+}
+const resp2 = subtração (num1, num2)
+console.log(`Diferença: ${resp2}`)
+
+const multiplicação = () => {
+    const resultado = num1 * num2
+    return resultado
+}
+const resp3 = multiplicação (num1, num2)
+console.log(`Multiplicação: ${resp3}`)
+
+const divisão = () => {
+    const resultado = num1 / num2
+    return resultado
+}
+const resp4 = divisão (num1, num2)
+console.log(`Divisão: ${resp4}`)
+*/
