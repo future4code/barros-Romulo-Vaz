@@ -35,7 +35,9 @@ function retornaNumerosPares(array) {
 
 // EXERCÍCIO 05
 function retornaNumerosParesElevadosADois(array) {
-        
+  const numPares = array.filter((item, index, array) => {
+    return item.Math.pow(2 % 2 === 0)})
+    return numPares 
 }
 
 // EXERCÍCIO 06
@@ -50,12 +52,8 @@ function retornaMaiorNumero(array) {
 
 // EXERCÍCIO 07
 function retornaObjetoEntreDoisNumeros(num1, num2) { 
-  if(num1 < num2){
-     return num1
-   } else if(num2 < num1){
-     return num2
-   }  
-}
+    
+} 
 // EXERCÍCIO 08
 function retornaNPrimeirosPares(n) {
   let numPares = []
@@ -91,23 +89,21 @@ const min = array2.reduce((a,b) => {
 biggerSmall.push(max)
 biggerSmall.push(min)
 return biggerSmall
-}
+} retornaSegundoMaiorESegundoMenor
 
 // EXERCÍCIO 11
-const marvel = {
-	nome: 'Doutor Estranho no Multiverso da Loucura',
-	ano: 2022,
-	diretor: 'Sam Raimi',
-	atores: ['Kochitl Gomez', 'Elizabeth Olsen', 'Benedict Cumberbatch']
-   }
    function retornaChamadaDeFilme(filme) {
-  
-   let infosFilme = (filme.nome, filme.ano, filme.diretor, filme.atores, filme.atores)
-   return infosFilme
-  }
-   console.log(`Venha assistir ao filme ${marvel.nome}, de ${marvel.ano},
-	dirigido por ${marvel.diretor} e estrelado por 
-	${marvel.atores}`)
+   filme = {
+   nome: "O Diabo Veste Prada",
+   ano: 2006,
+   diretor: "David Frankel",
+   atores:["Meryl Streep","Anne Hathaway","Emily Blunt","Stanley Tucci"]}
+
+   let infosFilme = (` Venha assistir ao filme ${filme.nome},
+  de ${filme.ano}, dirigido por ${filme.diretor} e estrelado por ${filme.atores} `)
+   
+    return infosFilme
+  } 
 
 // EXERCÍCIO 12
 function retornaPessoaAnonimizada(pessoa) {
@@ -117,35 +113,18 @@ function retornaPessoaAnonimizada(pessoa) {
 
 // EXERCÍCIO 13A
 function retornaPessoasAutorizadas(pessoas) {
-  
- pessoas = [
-	{ nome: "Wanda Maximoff", idade: 28, altura: 1.7},
-	{ nome: "Stephen Strange ", idade: 37, altura: 1.9},
-	{ nome: "America Chavez", idade: 15, altura: 1.3},
-	{ nome: "Charles Chavier", idade: 70, altura: 1.7},
-	{ nome: "Peggy Carter", idade: 30, altura: 1.6},
-	{ nome: "Billy Maximoff", idade: 12, altura: 1.3}
-] 
- const requisitos1 = pessoas.filter ((suaAltura, suaIdade) => {
-    if(suaAltura.altura >= 1.5){
-		return suaAltura
-	} else if(suaIdade.idade >= 14 && idade <= 60){
-		return suaIdade
-	}
- }) 
- return requisitos1
-}
+  return pessoas.filter( quemBrinca => {
+    return(quemBrinca.altura >= 1.5 && quemBrinca.idade > 14 && quemBrinca.idade < 60)
+  })
+} retornaPessoasAutorizadas
 
 //EXERCÍCIO 13B
 function retornaPessoasNaoAutorizadas(pessoas) {
-   let naoAutorizadas = []
-   for (quemBrinca of pessoas) {
-     if(quemBrinca.altura >= 1.5 || (quemBrinca.idade < 14 || quemBrinca.idade >= 60)){
-       naoAutorizadas.push(quemBrinca)
-     }
-     return naoAutorizadas
-   }
+  return pessoas.filter( quemBrinca2 => {
+    return(quemBrinca2.altura <= 1.5 || quemBrinca2.idade < 14 || quemBrinca2.idade >= 60)
+  })
 } 
+
 // EXERCÍCIO 14
 function retornaContasComSaldoAtualizado(contas) {
  for ( let i = 0; i < contas.length; i ++) {
@@ -163,12 +142,11 @@ function retornaContasComSaldoAtualizado(contas) {
   contas[i].compras = []
   contas[i].saldoTotal + somarNum(entradas)
  }
-}
+} retornaContasComSaldoAtualizado
 
 // EXERCÍCIO 15A
 function retornaArrayOrdenadoAlfabeticamente(consultas) {
-  let ordemAlfabetica =
-  consultas.sort((a, b) => {
+  let ordemAlfabetica = consultas.sort((a, b) => {
     if (a.nome < b.nome) {
       return -1 
     } else { return true }
@@ -178,13 +156,12 @@ function retornaArrayOrdenadoAlfabeticamente(consultas) {
 
 // EXERCÍCIO 15B
 function retornaArrayOrdenadoPorData(consultas) {
-    let ordemConsulta = 
-    consultas.sort((a, b) => {
-      if (a.dataConsuta < b.dataConsuta.split('/')) {
+  let diaConsulta = consultas.sort((a, b) => {
+      if (a.dataDaConsulta.split('/') > b.dataDaConsulta.split('/')) {
         return -1
-      }else if(a. dataConsuta.split('/') > b.dataConsuta.split('/')){ 
+      }else if(a.dataDaConsulta.split('/') < b.dataDaConsulta.split('/')){ 
         return 1 
       } else { return 0 }
     })
-    return ordemConsulta
+    return diaConsulta
 }
