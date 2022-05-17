@@ -35,24 +35,42 @@ function retornaNumerosPares(array) {
 
 // EXERCÍCIO 05
 function retornaNumerosParesElevadosADois(array) {
-  const numPares = array.filter((item, index, array) => {
-    return item.Math.pow(2 % 2 === 0)})
-    return numPares 
+  const arrayPares = []
+  for(let i = 0;i < array.length; i++) {
+    if(array[i] % 2 === 0) {
+      arrayPares.push(array[i] * array[i])
+    }
+  }
+  return arrayPares
 }
 
 // EXERCÍCIO 06
 function retornaMaiorNumero(array) {
-  let maior = 0;
-  for (var i = 0; i < array.length; i++) {
-   if ( array[i] > maior ) {
-      maior = array[i];
+  let maiorNum = array[0]
+  for (let i = 0; i < array.length; i++) {
+   if ( array[i] > maiorNum ) {
+      maiorNum = array[i];
     } 
-  } return maior
+  } return maiorNum
 }
 
 // EXERCÍCIO 07
 function retornaObjetoEntreDoisNumeros(num1, num2) { 
-    
+    let bigger
+    let small
+    if(num1 > num2) {
+      bigger = num1;
+      small = num2
+    } else {
+      bigger = num2;
+      small = num1
+    }
+    const object = {
+      maiorNumero: bigger,
+      maiorDivisivelPorMenor: bigger % small === 0,
+      diferenca: bigger - small
+    }
+    return object
 } 
 // EXERCÍCIO 08
 function retornaNPrimeirosPares(n) {
@@ -78,31 +96,21 @@ function classificaTriangulo(ladoA, ladoB, ladoC) {
 
 // EXERCÍCIO 10
 function retornaSegundoMaiorESegundoMenor(array) {
-  const array2 = array
-  const biggerSmall = []
-const max = array2.reduce((a,b) => {
-  return Math.max(a, b - 1)
-})
-const min = array2.reduce((a,b) => {
-  return Math.min(a, b + 1)
-})
-biggerSmall.push(max)
-biggerSmall.push(min)
-return biggerSmall
-} retornaSegundoMaiorESegundoMenor
+  const ordenar = arrayOrdenado(array)
+  const segundoMaior = ordenar[ordenar.length - 2]
+  const segundoMenor = ordenar[1]
+  return [segundoMaior, segundoMenor]
+} 
 
 // EXERCÍCIO 11
    function retornaChamadaDeFilme(filme) {
-   filme = {
-   nome: "O Diabo Veste Prada",
-   ano: 2006,
-   diretor: "David Frankel",
-   atores:["Meryl Streep","Anne Hathaway","Emily Blunt","Stanley Tucci"]}
+    let textoAtores = "";
+    for (let a of filme.atores) {
+      textoAtores += a + ", ";
+    }
+    const semVirgulaNoUltimo = textoAtores.slice(0, -2);
 
-   let infosFilme = (` Venha assistir ao filme ${filme.nome},
-  de ${filme.ano}, dirigido por ${filme.diretor} e estrelado por ${filme.atores} `)
-   
-    return infosFilme
+    return `Venha assistir ao filme ${filme.nome}, de ${filme.ano}, dirigido por ${filme.diretor} e estrelado por ${semVirgulaNoUltimo}.`
   } 
 
 // EXERCÍCIO 12
