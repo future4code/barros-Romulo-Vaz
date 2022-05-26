@@ -1,0 +1,78 @@
+body {
+    background-image:url(../template-loja/img/capa.jfif);
+    background-size: cover;
+}
+.titulo-page1 {
+    color: orange;
+    margin-bottom: 10px;
+    text-align: center;
+    
+}
+.sub-page1 {
+    color: rgb(93, 143, 219); 
+    text-transform: uppercase;
+    text-align: center;
+}
+.parag {
+    color: orange;
+}
+.cor-page1 {
+    color:  rgb(93, 143, 219); 
+    display: block;
+}
+.cor-page1-2 {
+    color: orange
+}
+
+.titulo-page2 {
+    text-align: center;
+    color: rgb(93, 143, 219);  
+}
+.cor-page2 {
+    color: orange;
+    margin-left: 5px  ;
+}
+#controle {
+    color: rgb(93, 143, 219);  
+}
+.cor-th1 {
+    color: orange;
+}
+.cor-th2 {
+color: rgb(93, 143, 219);
+}
+
+.titulo-page3 {
+    text-align: center;
+    color:  rgb(93, 143, 219); 
+}
+.cor-page3 {
+    color: orange;
+    margin-left: 5px  ;
+}
+#add {
+    color: rgb(93, 143, 219); 
+}
+.label1{
+    color: orange;
+}
+.label2 {
+    color: rgb(93, 143, 219); 
+}
+
+.titulo-page4 {
+    color: rgb(93, 143, 219); 
+    text-align: center;
+}
+.cor-page4 {
+    color: orange;
+}
+#funcionarios {
+    color: rgb(93, 143, 219); 
+}
+.li1 {
+    color: orange;
+}
+.li2 {
+    color: rgb(93, 143, 219); 
+}
