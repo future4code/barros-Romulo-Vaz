@@ -1,0 +1,78 @@
+* {
+    margin:  0;
+    padding: 0;
+}
+/* CABEÇALHO */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    background-color: mediumvioletred;
+}
+h3 {
+    margin-left: 9px;
+}
+.cabecalho {
+    display: flex;
+}
+#botao {
+    padding: 5px;
+    border: black;
+    font-size: 14px;
+
+}
+
+/* MENU */
+#page-principal {
+    display: flex;
+}
+nav {
+    background-color: #f2d0e0;
+}
+.menu {
+    display: flex;
+    padding-bottom: 10px;
+}
+.imagem {
+    margin: 0px 10px 0px 10px;
+}
+/*Pagina Principal*/
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section {
+    text-align: center;
+    margin: 10px auto;
+    padding: 10px;
+
+    width: 200px;
+}
+.sombra {
+    box-shadow:  10px 5px 5px darkgray;
+}
+h2 {
+    padding-bottom: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+p {
+    padding: 0px 10px 0px 10px;
+    text-align: center;
+    font-weight: bold; 
+    font-size: 10px;
+}
+
+/* RODAPÉ DA PÁGINA */
+footer {
+    position: fixed;
+    padding: 8px 0;
+    
+    background-color:  mediumvioletred;
+
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+    width: 100%;
+}
