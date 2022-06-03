@@ -8,9 +8,9 @@ function criarArrayNomesAnimais() {
       { nome: "Carpa", classificacao: "peixe" },
       { nome: "Pomba", classificacao: "ave" }
     ]
-
- // Escreva seu código aqui
-const nomeAnimais = animais.map((infos) => {
-  return infos.nome
+ 
+   let nomeAnimais= animais.map((nomes) =>  {
+   return `${nomeAnimais.name}`;
+ 
 })
 }
