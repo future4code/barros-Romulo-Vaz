@@ -1,0 +1,44 @@
+body{
+    background-image: url(./img/capa3.png);
+    background-size: cover;
+    background-attachment: scroll;
+}
+/* index.html*/
+.header1 {
+    text-align: center;
+    margin-bottom: 100px;
+}
+.menu {
+    margin-left:150px;
+}
+/* projetos.html*/
+.menu2 {
+    color: black;
+    padding-left: 20px; 
+}
+.header2, #main1 {
+    text-align: center;
+    margin: 50px 100px;
+}
+#b1,#b2,#b3 {
+    display: block;
+    margin: 0 auto;
+}
+
+/* sobre.html*/
+.main2 {
+    text-align: center;
+    margin: 50px 100px ;
+}
+.main3 {
+    text-align: center;
+    margin:0 auto;
+}
+
+/* contato.html*/
+#txt-ctt{
+    margin-top: 100px;
+}
+.contato {
+    display: block;
+}
