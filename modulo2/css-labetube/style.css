@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* CABEÇALHO */
+body {
+    background-image: url(img/capa.jfif);
+}
+#header1,#header2,#header3 {
+    color: black;
+    background-color: rgb(202, 86, 150);
+    display: grid;
+    grid-template-columns: 86% 10%;
+    padding: 10px;
+}
+button {
+    display: grid;
+    align-items: center;
+    justify-items: start;
+}
+
+/* PAGINA PRINCIPAL*/
+#main1 { 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+.nav1 {
+    border: 2px solid whitesmoke;
+    text-align: center;
+}
+.sub {
+    text-decoration: none; /* remove o sublinhado */
+}
+img {
+    padding: 10px;
+    height: 200px;
+    width: 200px;
+}
+p {
+   color: whitesmoke;
+}
+
+/* FOOTER */
+footer {
+    background-color:  rgb(202, 86, 150);
+    padding: 10px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+/* PAGINA DO VIDEO 1*/
+h1,h3 {
+    color: whitesmoke;
+}
+#main2,#main3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+    margin: 30px 0px 10px 50px ;
+}
+#midia {
+  color:  whitesmoke; 
+}
